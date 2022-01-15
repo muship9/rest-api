@@ -1,0 +1,2 @@
+//HTTPメソッドを元にコントローラの各処理へのルーティングを行う
+package controller
