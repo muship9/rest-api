@@ -26,6 +26,7 @@ func (ro *router) HandleTodosRequest(w http.ResponseWriter, r *http.Request) {
 	case "DELETE":
 		ro.tc.DeleteTodo(w, r)
 	default:
+		// 405 = アクションの実行を許可しない
 		w.WriteHeader(405)
 	}
 }
